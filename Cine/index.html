@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Alien</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Alien, la saga</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#pelicula-del-dia">Película del Día</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="carrusel">
+                <img src="IMG/1.jpg" alt="Película 1" class="active">
+                <img src="IMG/2.jpg" alt="Película 2">
+                <img src="IMG/1.jpg" alt="Película 3">
+            </div>
+        </section>
+ <div class="container">
+        <button id="fraseBtn">Mejores frases de la saga</button>
+        <p id="fraseDisplay"></p>
+    </div>
+        <section id="galeria">
+            <h2>Proximas peliculas</h2>
+            <div class="galeria-grid">
+                <div class="pelicula">
+                    <img src="IMG/trailer-final-de-alien-romulus-en-castellano-original.jpg" alt="Película 4">
+                    
+                    <div class="info">
+                        <h3>Alien Romulus</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper eleifend porttitor.</p>
+                    </div>
+                </div>
+                <!-- Repite este div.pelicula para más películas -->
+            </div>
+        </section>
+
+        <section id="pelicula-del-dia">
+            <h2>Película del Día</h2>
+            <div class="pelicula-destacada">
+                <img src="IMG/trailer-final-de-alien-romulus-en-castellano-original.jpg" alt="Película del Día">
+                <div class="info">
+                    <h3>Alien Romulus</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper eleifend porttitor. Morbi leo lacus, pretium ac turpis eget, venenatis consequat magna. Donec luctus et leo et interdum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CineEspectacular. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

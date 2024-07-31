@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #e50914;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+main {
+    padding-top: 80px;
+    width: 100%;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#fraseDisplay {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+.carrusel {
+    margin: 100PX 0;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    overflow: hidden;
+}
+
+.carrusel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carrusel img.active {
+    opacity: 1;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #e50914;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.pelicula {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pelicula img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.pelicula .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.pelicula:hover {
+    transform: scale(1.05);
+}
+
+.pelicula:hover .info {
+    transform: translateY(0);
+}
+
+.pelicula-destacada {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    margin: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pelicula-destacada img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.pelicula-destacada .info {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    }
+
